@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/teabackground">
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha=".4"
+            android:background="@drawable/background_fade">
+
+        </FrameLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left_16"
+                android:layout_marginTop="@dimen/margin_top_16"
+                android:layout_marginRight="@dimen/margin_right_16"
+                android:layout_marginBottom="@dimen/margin_bottom_16"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/btPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:background="@drawable/edit_style"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:hint="Enter Phone Number"
+                    android:inputType="phone"
+                    android:maxLength="30"
+                    android:maxLines="1"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+
+                <EditText
+                    android:id="@+id/btMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:background="@drawable/edit_style"
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="@dimen/padding_16"
+                    android:hint="Enter Message Here"
+                    android:inputType="textLongMessage"
+                    android:maxLines="12"
+                    android:padding="@dimen/padding_16"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+
+                <Button
+                    android:id="@+id/btSelectTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:background="@drawable/white_style"
+                    android:onClick="openTImePicker"
+                    android:text="Open Time Picker"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_20" />
+
+                <Button
+                    android:id="@+id/btScheduleSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_right_16"
+                    android:layout_marginTop="@dimen/margin_top_8"
+                    android:layout_marginRight="@dimen/margin_right_16"
+                    android:layout_marginBottom="@dimen/margin_top_8"
+                    android:background="@drawable/red_style"
+                    android:text="Schedule Your SMS :)"
+                    android:onClick="scheduleSMS"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_20" />
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginStart="@dimen/margin_left_16"-->
+                <!--                    android:layout_marginRight="@dimen/margin_right_16"-->
+                <!--                    android:layout_marginTop="@dimen/margin_top_16"-->
+                <!--                    android:layout_marginBottom="@dimen/margin_bottom_16"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--&lt;!&ndash;                    <TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:id="@+id/tvTimer"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:layout_width="0dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:layout_marginLeft="@dimen/margin_left_16"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:layout_marginRight="@dimen/margin_right_16"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:layout_marginBottom="@dimen/margin_bottom_8"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:layout_weight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:gravity="start"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:paddingTop="@dimen/padding_16"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:paddingBottom="@dimen/padding_16"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:text=""&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:textColor="@color/white"&ndash;&gt;-->
+                <!--&lt;!&ndash;                        android:textSize="@dimen/text_20" />&ndash;&gt;-->
+
+                <!--                </LinearLayout>-->
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
